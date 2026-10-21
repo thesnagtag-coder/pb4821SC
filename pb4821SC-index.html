@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>The Pregnancy &amp; New Baby Check - SafeLife Situations by The Snag Tag</title>
+<meta name="description" content="Real checks for pregnancy, postpartum recovery, twins & multiples, or a new pet and baby household. Free, 5 minutes, no signup.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%2315130F%22/%3E%3Cpath%20d%3D%22M10%206h9.5c.8%200%201.6.3%202.1.9l6%206c1.2%201.2%201.2%203.1%200%204.2l-9.5%209.5c-1.2%201.2-3.1%201.2-4.2%200l-6-6c-.6-.6-.9-1.3-.9-2.1V9c0-1.7%201.3-3%203-3z%22%20fill%3D%22%23D9B65F%22/%3E%3Ccircle%20cx%3D%2214.5%22%20cy%3D%2211.5%22%20r%3D%222%22%20fill%3D%22%2315130F%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#9B6B80; --accent-dark:#7D4F63; --accent-rgb:155,107,128; --teal:#7FA396;
+  --bg:#F5EEF1; --surface:#FFFFFF; --surface-2:#EDE0E4; --tile:#FFFFFF;
+  --ink:#332E30; --ink-mid:#5E5457; --ink-soft:#7A6E71; --line:#E1D3D8;
+  --safe:#4F8266; --safe-bg:#E7F1E9;
+  --flag:#C1573F; --flag-bg:#FBE7DE;
+}
+body[data-mode="dark"]{
+  --accent:#D699AD; --accent-dark:#C17E95; --accent-rgb:214,153,173;
+  --bg:#E4DFD1; --surface:#F2EEE3; --surface-2:#D7D0BC; --tile:#F2EEE3;
+  --ink:#332E30; --ink-mid:#5E5457; --ink-soft:#7A6E71; --line:#C9C0A8;
+  --safe:#8FC7A3; --safe-bg:#1C2B22;
+  --flag:#E08868; --flag-bg:#2E1E16;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; transition:background .25s,color .25s}
+h1,h2{font-family:'Bebas Neue',Inter,sans-serif; letter-spacing:.02em; margin:0}
+.serif{font-family:'DM Serif Display',Georgia,serif; letter-spacing:0}
+::selection{background:rgba(var(--accent-rgb),.3)}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--accent-dark); outline-offset:2px}
+@media (prefers-reduced-motion: reduce){ *{animation-duration:.001ms !important; transition-duration:.001ms !important} }
+
+.rail{position:fixed; left:0; top:0; height:100vh; width:76px; z-index:40; display:flex; flex-direction:column; align-items:center; padding:22px 0; border-right:1px solid var(--line); background:var(--surface); overflow-y:auto; overflow-x:hidden; scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.rail-mark{width:40px; height:40px; border-radius:9px; background:#1E1B15; position:relative; flex:none; display:grid; place-items:center; box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.rail-mark svg{width:18px; height:18px}
+.rail-nav{list-style:none; margin:24px 0 0; padding:0; display:flex; flex-direction:column; gap:2px; align-items:center}
+.rail-nav a{writing-mode:vertical-rl; text-orientation:mixed; transform:rotate(180deg); font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); text-decoration:none; padding:9px 8px; border-radius:8px; display:flex; align-items:center; gap:6px}
+.rail-nav a:hover, .rail-nav a.active{background:var(--surface-2); color:var(--ink)}
+.rail-nav a::before{content:"\2022"; color:var(--accent-dark); font-size:.9rem}
+.rail-bottom{margin-top:auto; display:flex; flex-direction:column; align-items:center; gap:14px}
+.theme-btn{width:34px; height:34px; border-radius:8px; border:1px solid var(--line); background:var(--surface); color:var(--ink-soft); cursor:pointer; display:grid; place-items:center; font-size:.85rem}
+.theme-btn:hover{color:var(--ink); border-color:var(--accent-dark)}
+.rail-cta{writing-mode:vertical-rl; transform:rotate(180deg); text-decoration:none; background:var(--accent-dark); color:#fff; font-family:'Inter',sans-serif; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:14px 10px; border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,.18)}
+@media (max-width:860px){
+  .rail{position:static; width:100%; height:auto; flex-direction:row; justify-content:space-between; border-right:none; border-bottom:1px solid var(--line); padding:14px 18px}
+  .rail-nav{flex-direction:row; margin:0; flex-wrap:wrap}
+  .rail-nav a{writing-mode:horizontal-tb; transform:none; padding:8px 10px}
+  .rail-bottom{margin-top:0; flex-direction:row}
+  .rail-cta{writing-mode:horizontal-tb; transform:none; padding:9px 14px}
+}
+.content{margin-left:76px}
+@media (max-width:860px){ .content{margin-left:0} }
+
+.topbar{background:linear-gradient(135deg,var(--accent-dark),#2A231D); color:#fff; padding:12px 18px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:20; box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.topbar-left{display:flex; align-items:center; gap:10px}
+.topbar-logo{width:32px;height:32px;border-radius:8px;background:var(--teal);display:flex;align-items:center;justify-content:center;flex:none}
+.topbar-logo svg{width:18px;height:18px;stroke:#2B2621}
+.topbar-name{font-family:'Bebas Neue',sans-serif; font-size:19px; letter-spacing:.03em}
+.topbar-name span{color:var(--teal)}
+.topbar-sub{font-size:11px; color:rgba(255,255,255,.62); font-weight:500; font-family:'Inter',sans-serif}
+.tool-btn{background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16); color:#fff; border-radius:8px; padding:7px 10px; font-size:13px; cursor:pointer; font-weight:600}
+.tool-btn:hover{background:rgba(255,255,255,.17)}
+
+.progress-wrap{position:sticky; top:0; z-index:19; background:var(--bg); padding:10px 18px 8px; border-bottom:1px solid var(--line)}
+.progress-track{height:6px; background:var(--surface-2); border-radius:99px; overflow:hidden; max-width:640px; margin:0 auto}
+.progress-fill{height:100%; background:var(--teal); border-radius:99px; transition:width .35s ease; width:0%}
+.progress-label{max-width:640px; margin:6px auto 0; font-size:12px; color:var(--ink-soft); font-weight:600; display:flex; justify-content:space-between}
+
+main{max-width:640px; margin:0 auto; padding:28px 20px 90px}
+.screen{display:none; animation:fade .35s ease}
+.screen.active{display:block}
+@keyframes fade{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:translateY(0)}}
+
+.hook-badge{display:inline-flex; align-items:center; gap:6px; background:var(--surface-2); color:var(--accent-dark); font-weight:700; font-size:12.5px; padding:5px 12px; border-radius:99px; margin-bottom:18px; font-family:'Inter',sans-serif}
+body[data-mode="dark"] .hook-badge{color:var(--teal)}
+.hook h1{font-size:clamp(2.1rem,7vw,2.8rem); line-height:1.05; margin-bottom:14px}
+.hook h1 em{font-style:normal; color:var(--accent-dark)}
+body[data-mode="dark"] .hook h1 em{color:var(--teal)}
+.hook p.lede{font-size:1.05rem; color:var(--ink-mid); margin-bottom:22px; font-family:'Inter',sans-serif}
+.hook-facts{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:26px}
+.hook-fact{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 10px; text-align:center}
+.hook-fact .n{font-family:'Bebas Neue',sans-serif; font-size:1.6rem; color:var(--accent-dark)}
+body[data-mode="dark"] .hook-fact .n{color:var(--teal)}
+.hook-fact .t{font-size:11.5px; color:var(--ink-soft); font-weight:600; margin-top:2px; font-family:'Inter',sans-serif}
+
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:10px; padding:15px 22px; font-size:16px; font-weight:700; cursor:pointer; border:none; width:100%; text-align:center; font-family:'Inter',sans-serif}
+.btn-primary{background:var(--accent-dark); color:#fff; box-shadow:0 4px 14px rgba(var(--accent-rgb),.35)}
+.btn-primary:hover{filter:brightness(1.12)}
+.btn-ghost{background:var(--surface); color:var(--ink); border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--accent-dark)}
+.hint-row{display:flex; align-items:center; gap:8px; margin-top:14px; font-size:13px; color:var(--ink-soft); justify-content:center; font-family:'Inter',sans-serif}
+
+.choose-card{background:var(--surface); border:1.5px solid var(--line); border-radius:14px; padding:18px 18px; margin-bottom:12px; cursor:pointer; transition:border-color .15s}
+.choose-card:hover{border-color:var(--accent-dark)}
+.choose-card .cc-label{font-family:'DM Serif Display',serif; font-size:1.2rem; margin-bottom:3px}
+.choose-card .cc-range{font-size:13px; color:var(--ink-soft); font-weight:600; font-family:'Inter',sans-serif}
+
+.zone-chip{display:inline-flex; align-items:center; gap:6px; background:var(--surface-2); color:var(--ink-mid); font-weight:700; font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; padding:5px 11px; border-radius:99px; margin-bottom:16px; font-family:'Inter',sans-serif}
+.zone-chip .dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
+
+.check-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:24px 22px; box-shadow:0 2px 12px rgba(34,43,48,.08)}
+.check-card .verb{font-family:'Inter',sans-serif; font-size:12.5px; font-weight:700; color:var(--accent-dark); text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px}
+body[data-mode="dark"] .check-card .verb{color:var(--teal)}
+.check-card h2{font-family:'DM Serif Display',serif; font-size:1.5rem; line-height:1.3; margin-bottom:10px; letter-spacing:0}
+.check-card .prompt{font-size:1rem; color:var(--ink-mid); margin-bottom:20px; font-family:'Inter',sans-serif}
+.check-card .prompt strong{color:var(--ink)}
+.opts{display:flex; flex-direction:column; gap:10px; margin-bottom:4px}
+.opt{display:flex; align-items:center; gap:12px; background:var(--tile); border:1.5px solid var(--line); border-radius:12px; padding:14px 16px; cursor:pointer; font-size:15px; font-weight:600; color:var(--ink); font-family:'Inter',sans-serif; transition:border-color .15s, background .15s}
+.opt:hover{border-color:var(--accent-dark)}
+.opt .ic{width:22px;height:22px;border-radius:50%;border:2px solid var(--line); flex:none; display:flex;align-items:center;justify-content:center; font-size:13px; font-weight:800; color:transparent}
+.opt.selected.safe{background:var(--safe-bg); border-color:var(--safe)}
+.opt.selected.safe .ic{border-color:var(--safe); color:var(--safe)}
+.opt.selected.flag{background:var(--flag-bg); border-color:var(--flag)}
+.opt.selected.flag .ic{border-color:var(--flag); color:var(--flag)}
+.change-hint{font-size:12.5px; color:var(--ink-soft); margin:10px 0 0; font-family:'Inter',sans-serif}
+
+.reveal{margin-top:18px; border-radius:12px; padding:16px 18px; border-left:4px solid var(--accent-dark); background:var(--surface-2); display:none; font-family:'Inter',sans-serif}
+.reveal.show{display:block; animation:fade .3s ease}
+.reveal .rk{font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--accent-dark); margin-bottom:6px}
+body[data-mode="dark"] .reveal .rk{color:var(--teal)}
+.reveal.good{border-left-color:var(--safe); background:var(--safe-bg)}
+.reveal.good .rk{color:var(--safe)}
+.reveal.bad{border-left-color:var(--flag); background:var(--flag-bg)}
+.reveal.bad .rk{color:var(--flag)}
+.reveal p{margin:0 0 8px; font-size:14.5px; color:var(--ink-mid)}
+.reveal p:last-child{margin-bottom:0}
+.reveal .src{font-size:12.5px; color:var(--ink-soft); font-style:italic}
+
+.nav-row{display:flex; gap:10px; margin-top:22px}
+.nav-row .btn{flex:1}
+.nav-back{background:transparent; color:var(--ink-soft); border:none; font-size:13px; font-weight:600; cursor:pointer; padding:8px; margin-top:10px; width:100%; text-align:center; font-family:'Inter',sans-serif}
+
+.result-head{text-align:center; margin-bottom:24px}
+.result-head .kicker{font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); font-family:'Inter',sans-serif}
+.result-head h1{font-size:2rem; margin:8px 0 4px}
+.result-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:22px 0 26px}
+.rstat{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 8px; text-align:center}
+.rstat .n{font-family:'Bebas Neue',sans-serif; font-size:2rem}
+.rstat.total .n{color:var(--ink)}
+.rstat.safe .n{color:var(--safe)}
+.rstat.flag .n{color:var(--flag)}
+.rstat .t{font-size:11.5px; color:var(--ink-soft); font-weight:600; margin-top:2px; font-family:'Inter',sans-serif}
+
+.section-h{font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); margin:26px 0 12px; font-family:'Inter',sans-serif}
+.finding{display:flex; gap:12px; padding:13px 0; border-bottom:1px solid var(--line); font-family:'Inter',sans-serif}
+.finding:last-child{border-bottom:none}
+.finding .fic{width:26px;height:26px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+.finding.flag .fic{background:var(--flag-bg); color:var(--flag)}
+.finding.safe .fic{background:var(--safe-bg); color:var(--safe)}
+.finding .ft{font-weight:700; font-size:14.5px; margin-bottom:2px}
+.finding .fd{font-size:13.5px; color:var(--ink-soft); line-height:1.5}
+
+.bridge{background:linear-gradient(160deg,var(--accent-dark),#2A231D); color:#fff; border-radius:18px; padding:26px 22px; margin:24px 0 20px}
+.bridge .bk{font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--teal); font-family:'Inter',sans-serif}
+.bridge h3{font-family:'DM Serif Display',serif; font-size:1.5rem; margin:8px 0 12px; line-height:1.3; letter-spacing:0}
+.bridge p{font-size:14.5px; color:rgba(255,255,255,.82); margin:0 0 14px; font-family:'Inter',sans-serif}
+.bridge .btn-primary{background:var(--teal); color:#2B2621}
+.bridge .note{font-size:11.5px; color:rgba(255,255,255,.45); margin-top:10px; text-align:center; font-family:'Inter',sans-serif}
+.btn-soon{background:transparent !important; color:rgba(255,255,255,.6) !important; border:1.5px dashed rgba(255,255,255,.35); cursor:default; pointer-events:none; box-shadow:none !important}
+.soon-note{display:none; font-size:12.5px; color:rgba(255,255,255,.55); margin-top:10px; font-family:'Inter',sans-serif}
+
+.restart-row{text-align:center; margin-top:8px}
+.restart-row button{background:none; border:none; color:var(--ink-soft); font-size:13px; font-weight:600; text-decoration:underline; cursor:pointer; font-family:'Inter',sans-serif}
+.disclaimer{font-size:12px; color:var(--ink-soft); text-align:center; margin-top:30px; padding-top:18px; border-top:1px solid var(--line); line-height:1.6; font-family:'Inter',sans-serif}
+</style>
+</head>
+<body data-mode="light">
+
+<nav class="rail">
+  <a class="rail-mark" href="https://thesnagtag.com/" aria-label="The Snag Tag - home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#F5EEF1" stroke-width="1.6"><path d="M20 12 13 5a2 2 0 0 0-2.8 0L4 11.2a2 2 0 0 0 0 2.8L11 21a2 2 0 0 0 2.8 0L20 14.8a2 2 0 0 0 0-2.8Z"/><circle cx="15" cy="9" r="1.4" fill="#F5EEF1" stroke="none"/></svg>
+  </a>
+  <ul class="rail-nav">
+    <li><a href="https://thesnagtag.com/safelife-age-group/">Age Group</a></li>
+    <li><a href="https://thesnagtag.com/safelife-situations/" class="active">Situations</a></li>
+    <li><a href="https://thesnagtag.com/life-legacy-vault/">Life &amp; Legacy</a></li>
+  </ul>
+  <div class="rail-bottom">
+    <button class="theme-btn" id="modeToggle" type="button" aria-label="Toggle dark mode">🌙</button>
+    <a class="rail-cta" href="https://thesnagtag.com/">Home</a>
+  </div>
+</nav>
+
+<div class="content">
+<div class="progress-wrap" id="progressWrap" style="display:none">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="progress-label"><span id="progressText">Check 1</span><span id="progressPct">0%</span></div>
+</div>
+
+<main>
+
+  <section class="screen active" id="screen-hook">
+    <div class="hook">
+      <span class="hook-badge">🤰 For pregnancy, postpartum, twins, or a new pet + baby household</span>
+      <h1>Some situations aren't about <em>age</em> - they're about right <em>now.</em></h1>
+      <p class="lede">Real checks pulled from The Snag Tag's own SafeLife Situations systems. No signup, no fear-mongering &mdash; just a fast, honest look at where you are today.</p>
+      <div class="hook-facts">
+        <div class="hook-fact"><div class="n">4</div><div class="t">real checks</div></div>
+        <div class="hook-fact"><div class="n">~4</div><div class="t">minutes</div></div>
+        <div class="hook-fact"><div class="n">$0</div><div class="t">to start</div></div>
+      </div>
+      <button class="btn btn-primary" id="startBtn" type="button">Start the Check &rarr;</button>
+      <div class="hint-row">Free. No account. Your answers stay on this device.</div>
+      <div class="hint-row" style="margin-top:6px"><a href="https://thesnagtag.com/safelife-situations/" style="color:inherit">← Browse all 5 Situations checks</a></div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-choose">
+    <div class="hook">
+      <h1 style="font-size:1.9rem">Which situation fits you right now?</h1>
+      <p class="lede" style="margin-bottom:20px">This decides which real checks you'll see today.</p>
+      <div class="choose-card" data-key="pregnancy"><div class="cc-label">Pregnancy</div><div class="cc-range">Any trimester</div></div>
+      <div class="choose-card" data-key="postpartum"><div class="cc-label">Postpartum Recovery</div><div class="cc-range">The weeks after any type of birth</div></div>
+      <div class="choose-card" data-key="twins"><div class="cc-label">Twins &amp; Multiples</div><div class="cc-range">One adult, more than one infant</div></div>
+      <div class="choose-card" data-key="newpetbaby"><div class="cc-label">New Pet + Baby Household</div><div class="cc-range">A pet and a baby sharing a home</div></div>
+    </div>
+  </section>
+
+  <section class="screen" id="screen-check">
+    <span class="zone-chip"><span class="dot"></span><span id="chkZone">Zone</span></span>
+    <div class="check-card">
+      <div class="verb" id="chkVerb">Check</div>
+      <h2 id="chkTitle"></h2>
+      <p class="prompt" id="chkPrompt"></p>
+      <div class="opts" id="chkOpts"></div>
+      <p class="change-hint">Pick either one &mdash; you can change your answer any time before you move on.</p>
+      <div class="reveal" id="chkReveal">
+        <div class="rk" id="revealKicker">Here's what actually matters</div>
+        <p id="revealWhy"></p>
+        <p id="revealHow"></p>
+        <p class="src" id="revealSrc"></p>
+      </div>
+      <div class="nav-row" id="chkNavRow" style="display:none">
+        <button class="btn btn-primary" id="chkNextBtn" type="button">Next check &rarr;</button>
+      </div>
+    </div>
+    <button class="nav-back" id="chkBackBtn" type="button">&larr; back</button>
+  </section>
+
+  <section class="screen" id="screen-result">
+    <div class="result-head">
+      <div class="kicker">Your Situation Check</div>
+      <h1 id="resultHeadline">Here's what you found</h1>
+    </div>
+
+    <div class="result-stats">
+      <div class="rstat total"><div class="n" id="statTotal">0</div><div class="t">checked today</div></div>
+      <div class="rstat safe"><div class="n" id="statSafe">0</div><div class="t">already sorted</div></div>
+      <div class="rstat flag"><div class="n" id="statFlag">0</div><div class="t">need attention</div></div>
+    </div>
+
+    <div class="section-h">What to check today</div>
+    <div id="findingsFlag"></div>
+
+    <div class="section-h">Already sorted</div>
+    <div id="findingsSafe"></div>
+
+    <div class="bridge">
+      <div class="bk">The complete system</div>
+      <h3 id="bridgeHeadline">You found the gaps. Here's what closes them.</h3>
+      <p id="bridgeBody"></p>
+      <a class="btn btn-primary" id="proBtn" href="#" target="_blank" rel="noopener">Get the PRO system &rarr;</a>
+      <div class="soon-note" id="proSoonNote">This module is being finalised for Gumroad &mdash; check back shortly.</div>
+      <div class="note">One-time purchase. Works offline, on any device, no subscription.</div>
+    </div>
+
+    <div class="restart-row"><button id="restartBtn" type="button">&#8634; Start the check again</button></div>
+
+    <div class="disclaimer">This is educational general safety guidance from The Snag Tag, a NEBOSH &amp; OSHA trained HSE professional &mdash; not medical advice. Always use your own judgement and consult your midwife, doctor, health visitor, or veterinarian for concerns specific to your situation.</div>
+  </section>
+
+</main>
+</div>
+
+<script>
+const PRODUCTS = {
+  "pregnancy": {
+    "label": "Pregnancy",
+    "gumroadUrl": "https://snagtag.gumroad.com/l/Pregnancy_PRO",
+    "checks": [
+      { "zone":"First Trimester", "verb":"Think back", "title":"Do you know the red-flag symptoms that always need a same-day call?",
+        "prompt":"Most early pregnancies progress normally, but a small number involve complications that need <strong>prompt assessment</strong> - recognising them is what protects you.",
+        "yes":"Yes, I know the list", "no":"Not really sure",
+        "why":"A small number of early pregnancies involve complications such as ectopic pregnancy or early miscarriage that need prompt assessment. Recognising red-flag symptoms early - not diagnosing them yourself - is what protects you.",
+        "how":"Learn the short list that always warrants an urgent call: heavy vaginal bleeding, severe one-sided abdominal pain, pain in the tip of the shoulder, fainting or feeling faint with pain, or a high fever. Save your maternity unit's number now.",
+        "src":"Source: SafeLife Pregnancy PRO, PG01 - Early Pregnancy Warning Signs" },
+      { "zone":"First Trimester", "verb":"Go check", "title":"Do you check every medicine before you take it, even old favourites?",
+        "prompt":"The right answer for pregnancy-safe medication can change depending on <strong>how many weeks pregnant you are</strong> - it's a check-first habit, not a memorised list.",
+        "yes":"Yes, every time", "no":"Not always",
+        "why":"Many medicines are well studied and safe in pregnancy, and some common ones are not recommended at certain stages. This is a check-first habit, not a memorised list.",
+        "how":"Before taking anything - pain relief, cold remedies, herbal supplements, a repeat prescription - check with your pharmacist, doctor, or midwife first. Tell every prescriber you see that you are pregnant, including dentists.",
+        "src":"Source: SafeLife Pregnancy PRO, PG03 - Medication Safety" },
+      { "zone":"First Trimester", "verb":"Go check", "title":"Do you know which everyday foods carry higher risk right now?",
+        "prompt":"Pregnancy changes how the immune system responds to certain food-borne infections - this is about knowing the <strong>categories</strong>, not fearing food generally.",
+        "yes":"Yes, I know them", "no":"Not really",
+        "why":"Some organisms that are a minor risk otherwise can affect a pregnancy. Recognising which food categories carry higher risk is what matters.",
+        "how":"Be aware of higher-risk categories: unpasteurised dairy and soft ripened cheeses, raw or undercooked eggs and meat, pre-prepared chilled foods and pâtés, and unwashed raw produce. Wash produce thoroughly, cook meat and eggs through.",
+        "src":"Source: SafeLife Pregnancy PRO, PG05 - Food Safety" },
+      { "zone":"First Trimester", "verb":"Think back", "title":"Have you settled your alcohol, smoking, and caffeine approach?",
+        "prompt":"International guidance is consistent: there's <strong>no known safe level</strong> of alcohol in pregnancy, and caffeine is best limited across all sources.",
+        "yes":"Yes, it's settled", "no":"Still figuring it out",
+        "why":"There is no known safe level of alcohol in pregnancy, and smoking - including secondhand smoke - carries recognised risks. Caffeine is generally advised to be limited rather than eliminated.",
+        "how":"The safest approach is no alcohol and no smoking; ask your doctor or a smoking-cessation service for support if needed. Limit caffeine from all sources - coffee, tea, cola, chocolate - and ask your midwife what a sensible daily limit looks like for you.",
+        "src":"Source: SafeLife Pregnancy PRO, PG07 - Alcohol, Smoking &amp; Caffeine Awareness" }
+    ]
+  },
+  "postpartum": {
+    "label": "Postpartum Recovery",
+    "gumroadUrl": "https://snagtag.gumroad.com/l/Postpartum_PRO",
+    "checks": [
+      { "zone":"Physical Recovery", "verb":"Go check", "title":"Are you actually keeping up perineal care, not just meaning to?",
+        "prompt":"Most tears and episiotomies heal well within weeks with <strong>simple, consistent care</strong> - the area is warm, moist, and close to two body-waste routes, so hygiene genuinely matters.",
+        "yes":"Yes, every day", "no":"Inconsistently",
+        "why":"Most perineal tears and episiotomies heal well within a few weeks with simple, consistent care.",
+        "how":"Rinse the area with warm water after using the toilet, pat - never rub - dry, and change sanitary pads every 3–4 hours. Sit on a soft cushion if needed and keep the area exposed to air for short periods each day.",
+        "src":"Source: SafeLife Postpartum PRO, PP01 - Perineal Care &amp; Healing" },
+      { "zone":"Physical Recovery", "verb":"Go check", "title":"Have you started pelvic floor exercises yet?",
+        "prompt":"Pregnancy and birth stretch and weaken pelvic floor muscles - targeted exercises can typically begin <strong>within days</strong> of birth.",
+        "yes":"Yes, started already", "no":"Not yet",
+        "why":"Targeted exercises reduce the risk of long-term issues such as incontinence and prolapse, and can typically begin within days of birth.",
+        "how":"Learn the correct squeeze-and-lift technique and practise little and often through the day. Ask your doctor, midwife, or a pelvic health physiotherapist for a check if you have ongoing leaking, heaviness, or pain - do not just push through it.",
+        "src":"Source: SafeLife Postpartum PRO, PP03 - Pelvic Floor Basics &amp; Exercises" },
+      { "zone":"Red Flags &amp; When to Call", "verb":"Think back", "title":"Would you recognise postpartum haemorrhage signs immediately?",
+        "prompt":"Heavy bleeding can happen in the first 24 hours or, less commonly, <strong>weeks later</strong> - recognising the signs and acting immediately matters.",
+        "yes":"Yes, I know the signs", "no":"Not totally sure",
+        "why":"Postpartum haemorrhage can occur in the first 24 hours or in the weeks that follow - recognising the signs and acting immediately saves lives.",
+        "how":"Seek emergency help immediately for: soaking through a pad in under an hour, passing clots larger than a golf ball, feeling dizzy or faint with a racing heart alongside bleeding, or any bleeding that suddenly increases. Do not wait to see if it settles.",
+        "src":"Source: SafeLife Postpartum PRO, PP29 - Postpartum Haemorrhage Signs" },
+      { "zone":"Red Flags &amp; When to Call", "verb":"Think back", "title":"Do you know the fever-plus-symptom combination that means call today?",
+        "prompt":"Postpartum infections are uncommon but can progress quickly if missed - a <strong>combined pattern</strong> is the key trigger.",
+        "yes":"Yes, I'd catch it", "no":"Not confident",
+        "why":"Recognising the combined pattern of fever with local or abdominal symptoms is the key trigger for prompt review.",
+        "how":"Contact your provider the same day for a fever of 38°C (100.4°F) or higher, increasingly painful or foul-smelling discharge, worsening lower abdominal tenderness, or a wound that's increasingly red, warm, swollen, or discharging.",
+        "src":"Source: SafeLife Postpartum PRO, PP30 - Infection Signs" }
+    ]
+  },
+  "twins": {
+    "label": "Twins & Multiples",
+    "gumroadUrl": "https://snagtag.gumroad.com/l/Twins_Multiples_PRO",
+    "checks": [
+      { "zone":"Supervision Maths", "verb":"Think back", "title":"Do you have a default 'who goes first' plan for two-at-once moments?",
+        "prompt":"A single carer <strong>physically cannot</strong> do two hands-on tasks simultaneously - planning for this, not fighting it, is what keeps everyone safe.",
+        "yes":"Yes, I have a system", "no":"I decide on the fly",
+        "why":"Supervision maths changes with multiples - planning for one-at-a-time care reduces the rushed, distracted moments where accidents happen.",
+        "how":"Build routines around 'one at a time' for anything requiring full attention - feeding, bathing, medicating - and use safe containment for whichever child is waiting their turn.",
+        "src":"Source: SafeLife Twins & Multiples PRO, TM01 - One-Adult, Multiple-Infant Logistics" },
+      { "zone":"Supervision Maths", "verb":"Think back", "title":"When both cry at once, do you know your safety-first order?",
+        "prompt":"Not every cry carries the same risk - a pre-thought <strong>decision order</strong> prevents costly hesitation in the moment.",
+        "yes":"Yes, decided in advance", "no":"I freeze or guess",
+        "why":"A child in a genuinely unsafe position always outranks a child who is simply upset. Having a clear order prevents hesitation.",
+        "how":"Use a simple hierarchy: physical danger first (falls, choking, water, entrapment), then pain or injury, then general distress. Say the safe child's name out loud to buy yourself a beat.",
+        "src":"Source: SafeLife Twins & Multiples PRO, TM02 - Prioritising Who Needs Attention First" },
+      { "zone":"Supervision Maths", "verb":"Go check", "title":"Do you ever bathe more than one child without full hands-on supervision of both?",
+        "prompt":"Drowning can happen silently in seconds, in only a few centimetres of water - having two children in the bathroom <strong>multiplies</strong>, not reduces, this risk.",
+        "yes":"No, never", "no":"Sometimes I have to split attention",
+        "why":"Drowning can happen silently in seconds at any age up to school age. Split attention with two children multiplies the risk.",
+        "how":"Gather everything you need before running the bath. If you cannot keep hands-on supervision of both, bathe them one at a time with the other safely contained elsewhere in the same room - never left alone near water.",
+        "src":"Source: SafeLife Twins & Multiples PRO, TM03 - Bath Time With More Than One Child" },
+      { "zone":"Sleep Safety for Multiples", "verb":"Go check", "title":"Does each baby have their own separate sleep surface, every sleep?",
+        "prompt":"Current guidance recommends against co-bedding twins or multiples, <strong>even identical twins who shared a womb</strong>.",
+        "yes":"Yes, always separate", "no":"Sometimes shared",
+        "why":"Co-bedding is a documented risk factor for overheating, accidental suffocation, and airway obstruction - every infant needs their own separate, firm, flat sleep surface.",
+        "how":"Provide a separate crib, cot, or bassinet for each infant, positioned side by side in the same room rather than sharing one surface, at every sleep - night, naps, and settling.",
+        "src":"Source: SafeLife Twins & Multiples PRO, TM15 - Separate Safe Sleep Surfaces" }
+    ]
+  },
+  "newpetbaby": {
+    "label": "New Pet + Baby Household",
+    "gumroadUrl": "https://snagtag.gumroad.com/l/New_Pet_Baby_Household_PRO",
+    "checks": [
+      { "zone":"Before Baby Comes Home", "verb":"Go check", "title":"Has every household pet had a check-up scheduled around your due date?",
+        "prompt":"A check-up before baby arrives confirms your pet is healthy and free of anything that could affect its <strong>temperament or safety</strong> around a newborn.",
+        "yes":"Yes, booked or done", "no":"Haven't yet",
+        "why":"A pre-arrival check-up confirms the pet is healthy and up to date on preventive care.",
+        "how":"Book a general wellness check-up ahead of the due date and mention to the vet that a baby is expected so they can flag anything relevant.",
+        "src":"Source: SafeLife New Pet + Baby PRO, PB01 - Pre-Arrival Veterinary Check-Up" },
+      { "zone":"Before Baby Comes Home", "verb":"Go check", "title":"Are vaccinations and parasite prevention fully up to date?",
+        "prompt":"Keeping pets current reduces the risk of disease transmission to a newborn with an <strong>immature immune system</strong>.",
+        "yes":"Yes, up to date", "no":"Overdue or unsure",
+        "why":"Up-to-date vaccination and parasite control is a core preventive measure in households expecting a baby.",
+        "how":"Review records with your veterinarian, catch up anything overdue, and set reminders for future doses well before the due date.",
+        "src":"Source: SafeLife New Pet + Baby PRO, PB02 - Vaccinations &amp; Parasite Prevention" },
+      { "zone":"Before Baby Comes Home", "verb":"Think back", "title":"Have you introduced your pet to baby's scent before the first meeting?",
+        "prompt":"Pets rely heavily on scent - introducing it gradually beforehand can make the <strong>actual first meeting calmer</strong>.",
+        "yes":"Yes, planned already", "no":"Hadn't thought of it",
+        "why":"Introducing baby's scent gradually beforehand can make the actual first meeting calmer and less novel for the pet.",
+        "how":"Bring home a blanket or worn item with baby's scent ahead of the actual arrival, and let the pet investigate it calmly at its own pace in a low-pressure setting.",
+        "src":"Source: SafeLife New Pet + Baby PRO, PB03 - Scent Familiarisation" },
+      { "zone":"Supervision Rules as Baby Grows", "verb":"Think back", "title":"Do you ever leave pet and baby together 'just for a moment'?",
+        "prompt":"The overwhelming majority of pet-related infant injuries happen during moments of <strong>no supervision</strong>, even with pets that have never shown concern before.",
+        "yes":"No, never", "no":"It's happened",
+        "why":"Unsupervised access is consistently identified as the single greatest risk factor in pet-related infant injury, regardless of the pet's history.",
+        "how":"Make active supervision an absolute, no-exception rule whenever pet and baby share a space. If you must leave the room, take the baby or move the pet - never assume 'just a minute' is safe.",
+        "src":"Source: SafeLife New Pet + Baby PRO, PB57 - Never Leaving Baby and Pet Alone Together" }
+    ]
+  }
+};
+
+const STORE_KEY = 'snagtag-pregnancy-newbaby-check';
+let state = { idx:0, answers:[], started:false, product:null };
+let CHECKS = [];
+
+function loadState(){
+  try{ const raw = localStorage.getItem(STORE_KEY); if(raw){ const s = JSON.parse(raw); if(s && Array.isArray(s.answers)) state = s; } }catch(e){}
+  if(state.product && PRODUCTS[state.product]) CHECKS = PRODUCTS[state.product].checks;
+}
+function saveState(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }catch(e){} }
+
+function show(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('progressWrap').style.display = (id==='screen-check') ? 'block' : 'none';
+  window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
+}
+
+document.querySelectorAll('.choose-card').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    const key = card.getAttribute('data-key');
+    state = { idx:0, answers:[], started:true, product:key };
+    CHECKS = PRODUCTS[key].checks;
+    saveState();
+    renderCheck(); show('screen-check');
+  });
+});
+
+function renderCheck(){
+  const i = state.idx;
+  const c = CHECKS[i];
+  document.getElementById('chkZone').textContent = c.zone;
+  document.getElementById('chkVerb').textContent = c.verb;
+  document.getElementById('chkTitle').textContent = c.title;
+  document.getElementById('chkPrompt').innerHTML = c.prompt;
+  document.getElementById('progressText').textContent = 'Check ' + (i+1) + ' of ' + CHECKS.length;
+  document.getElementById('progressPct').textContent = Math.round(((i)/CHECKS.length)*100) + '%';
+  document.getElementById('progressFill').style.width = ((i)/CHECKS.length*100) + '%';
+
+  const opts = document.getElementById('chkOpts');
+  opts.innerHTML = '';
+  const answered = state.answers[i] !== undefined && state.answers[i] !== null;
+
+  [['yes', c.yes, true], ['no', c.no, false]].forEach(([key,label,isSafe])=>{
+    const div = document.createElement('div');
+    div.className = 'opt';
+    const isSelected = answered && state.answers[i] === isSafe;
+    div.innerHTML = '<span class="ic">'+(isSelected ? '✓' : '')+'</span><span>'+label+'</span>';
+    if(isSelected) div.classList.add('selected', isSafe ? 'safe':'flag');
+    div.addEventListener('click', ()=>{
+      state.answers[i] = isSafe;
+      saveState();
+      renderCheck();
+      applyReveal(c, isSafe);
+      document.getElementById('chkNavRow').style.display = 'flex';
+      document.getElementById('chkNextBtn').textContent = (i === CHECKS.length-1) ? 'See my results →' : 'Next check →';
+    });
+    opts.appendChild(div);
+  });
+
+  const rv = document.getElementById('chkReveal');
+  if(answered){
+    applyReveal(c, state.answers[i]);
+    document.getElementById('chkNavRow').style.display = 'flex';
+    document.getElementById('chkNextBtn').textContent = (i === CHECKS.length-1) ? 'See my results →' : 'Next check →';
+  } else {
+    rv.classList.remove('show');
+    document.getElementById('chkNavRow').style.display = 'none';
+  }
+  document.getElementById('chkBackBtn').style.visibility = (i===0) ? 'hidden' : 'visible';
+}
+
+function applyReveal(c, isSafe){
+  const rv = document.getElementById('chkReveal');
+  rv.classList.add('show');
+  rv.classList.toggle('good', !!isSafe);
+  rv.classList.toggle('bad', !isSafe);
+  const kicker = document.getElementById('revealKicker');
+  const line1 = document.getElementById('revealWhy');
+  const line2 = document.getElementById('revealHow');
+  if(isSafe){
+    kicker.textContent = '✓ Good - that\'s sorted';
+    line1.textContent = c.why;
+    line2.textContent = 'Keep it that way.';
+  } else {
+    kicker.textContent = '⚠ Worth acting on - here\'s why';
+    line1.textContent = c.why;
+    line2.textContent = c.how;
+  }
+  document.getElementById('revealSrc').textContent = c.src;
+}
+
+document.getElementById('chkNextBtn').addEventListener('click', ()=>{
+  if(state.idx < CHECKS.length-1){
+    state.idx++; saveState(); renderCheck(); show('screen-check');
+  } else {
+    document.getElementById('progressFill').style.width = '100%';
+    renderResult(); show('screen-result');
+  }
+});
+document.getElementById('chkBackBtn').addEventListener('click', ()=>{
+  if(state.idx>0){ state.idx--; saveState(); renderCheck(); show('screen-check'); }
+});
+document.getElementById('startBtn').addEventListener('click', ()=>{
+  state = { idx:0, answers:[], started:true, product:null }; saveState();
+  show('screen-choose');
+});
+document.getElementById('restartBtn').addEventListener('click', ()=>{
+  state = { idx:0, answers:[], started:true, product:null }; saveState();
+  show('screen-choose');
+});
+
+function renderResult(){
+  const p = PRODUCTS[state.product];
+  const total = CHECKS.length;
+  const safeCount = state.answers.filter(a=>a===true).length;
+  const flagCount = state.answers.filter(a=>a===false).length;
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statSafe').textContent = safeCount;
+  document.getElementById('statFlag').textContent = flagCount;
+
+  document.getElementById('resultHeadline').textContent =
+    flagCount === 0 ? total + ' for ' + total + ' - genuinely well done' :
+    flagCount <= 1 ? 'Close. One thing to sort today' :
+    'You just found real gaps';
+
+  const flagWrap = document.getElementById('findingsFlag');
+  const safeWrap = document.getElementById('findingsSafe');
+  flagWrap.innerHTML = ''; safeWrap.innerHTML = '';
+  if(flagCount===0){ flagWrap.innerHTML = '<p style="font-size:14px;color:var(--ink-soft);font-family:Inter,sans-serif">Nothing flagged today &mdash; see the sorted list below.</p>'; }
+  CHECKS.forEach((c,i)=>{
+    const isSafe = state.answers[i]===true;
+    const div = document.createElement('div');
+    div.className = 'finding ' + (isSafe?'safe':'flag');
+    div.innerHTML = '<div class="fic">'+(isSafe?'✓':'!')+'</div><div><div class="ft">'+c.title.replace(/\?$/,'')+'</div><div class="fd">'+(isSafe? 'Sorted - keep it that way.' : c.how)+'</div></div>';
+    (isSafe ? safeWrap : flagWrap).appendChild(div);
+  });
+
+  const bridgeBody = flagCount === 0
+    ? 'You\'re sorted on all ' + total + ' of today\'s highest-priority checks for ' + p.label + '. The full SafeLife system covers every other zone - the quieter risks that don\'t announce themselves until something goes wrong.'
+    : 'Today\'s check found ' + flagCount + ' real thing' + (flagCount===1?'':'s') + ' worth acting on for ' + p.label + '. The full SafeLife system is built to close every gap like these, not just the ones you saw today.';
+  document.getElementById('bridgeBody').textContent = bridgeBody;
+
+  const proBtn = document.getElementById('proBtn');
+  const soonNote = document.getElementById('proSoonNote');
+  if(p.gumroadUrl === '#'){
+    proBtn.removeAttribute('href');
+    proBtn.classList.add('btn-soon');
+    proBtn.setAttribute('aria-disabled', 'true');
+    proBtn.textContent = 'Coming soon to Gumroad';
+    if(soonNote) soonNote.style.display = 'block';
+  } else {
+    proBtn.href = p.gumroadUrl;
+    proBtn.classList.remove('btn-soon');
+    proBtn.removeAttribute('aria-disabled');
+    proBtn.textContent = 'Get SafeLife ' + p.label + ' PRO →';
+    if(soonNote) soonNote.style.display = 'none';
+  }
+}
+
+function applyMode(m){
+  document.body.setAttribute('data-mode', m);
+  document.getElementById('modeToggle').textContent = m==='dark' ? '☀️' : '🌙';
+  try{ localStorage.setItem(STORE_KEY+'-mode', m); }catch(e){}
+}
+document.getElementById('modeToggle').addEventListener('click', ()=>{
+  applyMode(document.body.getAttribute('data-mode')==='dark' ? 'light' : 'dark');
+});
+(function initMode(){
+  let m = 'light';
+  try{ m = localStorage.getItem(STORE_KEY+'-mode') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }catch(e){}
+  applyMode(m);
+})();
+
+loadState();
+if(state.started && state.product && state.idx < CHECKS.length && !(state.answers.length===CHECKS.length && state.answers.every(a=>a!==undefined))){
+  renderCheck(); show('screen-check');
+} else if(state.started && state.product && state.answers.length===CHECKS.length && state.answers.every(a=>a!==undefined && a!==null)){
+  renderResult(); show('screen-result');
+} else if(state.started && !state.product){
+  show('screen-choose');
+}
+</script>
+</body>
+</html>
